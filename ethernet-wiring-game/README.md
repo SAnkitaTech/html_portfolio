@@ -8,11 +8,11 @@ An interactive, AI-assisted networking study project for Ankita Srivastava's IT 
 2. Select a wire, then select a pin, or drag a wire onto a pin.
 3. Fill all eight pins and select **Check wiring** for pin-by-pin feedback.
 4. Correct mistakes or select **New round** to clear the connector and shuffle the tray.
-5. Switch standards to practice both orders. Hints, a reference table, and **Show answer** are available.
+5. Switch standards to practice both orders. Hints, a reference table, **Show answer**, and The T568 Wire Parade™ study story are available.
 
 Keyboard: Tab to a wire, press Enter or Space, Tab to a pin, and press Enter or Space. Select a filled pin with no wire selected to remove it. Selecting an already placed wire moves it; a wire cannot occupy two pins.
 
-The session counter awards one perfect round per unassisted round. Hints, the reference table, and revealing the answer mark a round as assisted. Counts reset on page reload; no account or data collection is required.
+The session counter awards one perfect round per unassisted round. Hints, the reference table, the parade story, and revealing the answer mark a round as assisted. Counts reset on page reload; no account or data collection is required.
 
 ## Pinout
 
@@ -42,6 +42,12 @@ This folder can be served through GitHub Pages. If `html_portfolio` publishes th
 Built with AI assistance as a personal study tool. The HTML, CSS, and JavaScript implementation was generated for this project. This repository does not claim independent authorship of AI-generated code or completion of physical cable testing.
 
 Inspired by [Erivera3's Ethernet Wiring Practice Game](https://github.com/erivera3/ethernet-wiring-game). Original implementation and visual design for this version; no source code or personal memory method copied from the reference project.
+
+## The T568 Wire Parade™
+
+Original mnemonic and study story created by Ankita Srivastava on October 12, 2026. The full story is included in the game with pin color coding diagrams and in [STORY.md](STORY.md). The story uses a white cushion for each striped wire, Blue as the fair angel guarding the middle, Brown at the end, and Orange and Green as rivals for the first pair.
+
+If you share, adapt, repost, or include this mnemonic in notes, videos, blogs, presentations, or training materials, please credit Ankita Srivastava as the original creator.
 
 Technical reference: [Fluke Networks: T568A vs T568B](https://www.flukenetworks.com/knowledge-base/application-or-standards-articles-copper/differences-between-wiring-codes-t568a-vs).
 
