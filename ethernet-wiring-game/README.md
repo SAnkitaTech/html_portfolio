@@ -39,9 +39,7 @@ This folder can be served through GitHub Pages. If `html_portfolio` publishes th
 
 ## Project context and credits
 
-Built with AI assistance as a personal study tool. The HTML, CSS, and JavaScript implementation was generated for this project. This repository does not claim independent authorship of AI-generated code or completion of physical cable testing.
-
-Inspired by [Erivera3's Ethernet Wiring Practice Game](https://github.com/erivera3/ethernet-wiring-game). Original implementation and visual design for this version; no source code or personal memory method copied from the reference project.
+Built with AI assistance as a personal networking study tool.
 
 ## The T568 Wire Parade™
 
