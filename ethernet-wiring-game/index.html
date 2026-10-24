@@ -6,6 +6,7 @@
 <title>Ethernet Wiring Lab | Ankita Srivastava</title>
 <style>
 :root{color-scheme:light;--ink:#142f35;--muted:#52686d;--line:#d5e0df;--green:#086b59;--bg:#f2f6f3}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,sans-serif}button,select{font:inherit}button{cursor:pointer}button:focus-visible,select:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #c15e10;outline-offset:4px}a{color:var(--green)}.wrap{max-width:1120px;margin:auto;padding:28px 24px}header{display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line);padding-bottom:20px}.brand{font-weight:750;letter-spacing:.03em}.brand span{display:inline-grid;place-items:center;background:var(--green);color:white;width:34px;height:34px;border-radius:10px;margin-right:10px}.tag,.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:750}.intro{padding:36px 0 26px;display:flex;justify-content:space-between;align-items:end;gap:24px}h1{font-size:clamp(32px,5vw,49px);line-height:1.12;letter-spacing:-.04em;margin:10px 0 14px}p{margin:10px 0}.sub{color:var(--muted);max-width:630px}.stat{white-space:nowrap;border-left:2px solid var(--line);padding-left:20px}.stat strong{display:block;font-size:30px;line-height:1.1}.stat small{color:var(--muted)}.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:22px}.panel{background:white;border:1px solid var(--line);border-radius:20px;padding:25px}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:22px}select{border:1px solid #aabfba;border-radius:9px;padding:9px 12px;color:var(--ink);background:white}h2{font-size:18px;margin:0 0 8px}h3{font-size:15px;margin:18px 0 6px}.small{font-size:13px;color:var(--muted)}.connector{padding:22px 14px 18px;background:#e9efee;border:2px solid #b6c7c4;border-radius:18px 18px 32px 32px;position:relative}.connector::after{content:"";display:block;width:64px;height:20px;background:#bbc9c7;border-radius:0 0 10px 10px;margin:18px auto -38px}.pins{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px}.pin{min-width:0;border:1px solid #a6b9b6;border-radius:8px;background:#fff;display:flex;flex-direction:column;align-items:center;padding:10px 2px;min-height:157px;color:var(--ink);position:relative}.contact{width:15px;height:24px;background:linear-gradient(90deg,#c69930,#f2d786,#c69930);border-radius:3px;margin-bottom:10px}.number{font-size:13px;font-weight:750}.pin .swatch{height:43px;width:16px;margin:7px 0;border-radius:5px}.pin-label{font-size:10px;line-height:1.2;overflow-wrap:anywhere;min-height:25px}.pin.empty .swatch{background:#e4eae8;border:1px dashed #9aafaa}.pin.correct{border:2px solid #15805f;background:#f0faf5}.pin.wrong{border:2px solid #b64a2c;background:#fff5ef}.mark{font-size:11px;min-height:16px;font-weight:700}.orientation{text-align:center;margin:32px 0 20px;font-size:12px;color:var(--muted)}.tray{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:14px}.wire{background:white;border:1px solid var(--line);border-radius:10px;padding:11px 6px;display:flex;flex-direction:column;align-items:center;gap:7px;color:var(--ink);font-size:11px;line-height:1.3;min-height:76px}.swatch{display:inline-block;border:1px solid #778681;flex-shrink:0}.wire .swatch{width:100%;height:13px;border-radius:6px}.wire.selected{outline:3px solid var(--green);outline-offset:0;background:#f0faf5}.wire.used{opacity:.5}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.action{padding:10px 16px;border-radius:9px;border:1px solid #aabfba;background:white;color:var(--ink);font-weight:650}.primary{background:var(--green);color:white;border-color:var(--green)}.feedback{margin-top:18px;background:#f2f6f3;border-radius:10px;padding:13px 16px;font-size:14px}.feedback.success{background:#e5f5ec;color:#145b40}.feedback.error{background:#fff0e8;color:#8a341d}.feedback ul{padding-left:20px;margin:6px 0}.side{display:flex;flex-direction:column;gap:18px}.side .panel{padding:22px}.step{display:flex;gap:12px;margin-top:17px;font-size:14px}.step b{background:#e8f2ed;border-radius:50%;width:26px;height:26px;display:grid;place-items:center;flex-shrink:0;color:var(--green)}details{border-top:1px solid var(--line);padding-top:14px;margin-top:16px}summary{cursor:pointer;font-weight:650;font-size:14px}.hint{font-size:14px;color:var(--muted)}.reference{border-collapse:collapse;width:100%;font-size:12px;margin-top:12px}.reference td,.reference th{text-align:left;padding:5px;border-bottom:1px solid var(--line)}footer{font-size:12px;color:var(--muted);margin:28px 0 10px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}@media(max-width:880px){.layout{grid-template-columns:1fr}.side{display:grid;grid-template-columns:1fr 1fr}.intro{align-items:center}}@media(max-width:540px){.wrap{padding:20px 12px}.panel{padding:18px 12px}.tag{display:none}.stat{display:none}.intro{padding-top:24px}.toolbar{align-items:start;flex-direction:column;gap:8px}.pins{gap:3px}.pin{min-height:152px}.pin-label{font-size:9px}.connector{padding:16px 5px}.tray{grid-template-columns:repeat(2,minmax(0,1fr))}.side{grid-template-columns:1fr}.actions .action{flex:1;font-size:13px;padding:10px}.orientation{font-size:11px}}
+.story-panel{margin-top:22px}.story-panel>h2{font-size:27px;letter-spacing:-.02em;margin-top:9px}.story-body{max-width:780px;margin:20px auto 8px;font-size:16px;line-height:1.75}.story-body h3{font-size:22px;margin:32px 0 14px;border-top:1px solid var(--line);padding-top:22px}.story-body h4{font-size:17px;margin:22px 0 8px}.story-body p{margin:12px 0}.story-body ul{padding-left:24px}.story-body li{margin:8px 0}.parade-diagram{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:5px;margin:20px 0 32px;padding:12px;background:#e9efee;border:1px solid #b6c7c4;border-radius:12px}.parade-diagram>div{display:flex;flex-direction:column;align-items:center;gap:7px;text-align:center;font-size:11px;line-height:1.3;overflow-wrap:anywhere;min-width:0}.parade-wire{width:18px;height:54px;border:1px solid #778681;border-radius:5px}@media(max-width:540px){.parade-diagram{gap:3px;padding:10px 4px}.parade-diagram>div{font-size:9px}.parade-diagram .small{font-size:10px}.story-panel>h2{font-size:23px}}
 </style>
 </head>
 <body><div class="wrap">
@@ -19,8 +20,80 @@
 <div id="tray" class="tray" aria-label="Available wires"></div>
 <div class="actions"><button id="check" class="action primary">Check wiring</button><button id="reset" class="action">New round</button><button id="reveal" class="action">Show answer</button></div>
 <div id="feedback" class="feedback" role="status" aria-live="polite">Ready when you are. Fill all eight pins, then check your wiring.</div>
-</section><aside class="side"><section class="panel"><div class="eyebrow">Your practice routine</div><h2 style="margin-top:10px">One connector at a time.</h2><div class="step"><b>1</b><span>Choose T568A or T568B and fill all eight pins.</span></div><div class="step"><b>2</b><span>Check your order. Correct the pins marked “Fix”.</span></div><div class="step"><b>3</b><span>Start a new round, then switch standards to test your recall.</span></div><details><summary>Need a memory hint?</summary><div class="hint"><p>Blue stays in the middle: solid blue at 4, white/blue at 5.</p><p>Brown finishes both standards: white/brown at 7, brown at 8.</p><p>T568B starts with orange. T568A starts with green. The other pair goes to 3 and 6, white-striped wire first.</p></div></details></section>
+</section><aside class="side"><section class="panel"><div class="eyebrow">Your practice routine</div><h2 style="margin-top:10px">One connector at a time.</h2><div class="step"><b>1</b><span>Choose T568A or T568B and fill all eight pins.</span></div><div class="step"><b>2</b><span>Check your order. Correct the pins marked “Fix”.</span></div><div class="step"><b>3</b><span>Start a new round, then switch standards to test your recall.</span></div><details><summary>Need a memory hint?</summary><div class="hint"><p>From The T568 Wire Parade™ by Ankita Srivastava:</p><p>🍏 A = Apple = Green first. 🍊 B = Orange first. Each color puts its white cushion down first.</p><p>👼 Blue rushes in to guard the middle, forgetting his cushion: Blue at 4, White-Blue at 5.</p><p>🌍 Brown is grounded enough to come last: White-Brown at 7, Brown at 8.</p><p>The rival’s cushion takes pin 3; the rival follows at pin 6.</p><p><a href="#story-title">Read the full parade story below</a></p></div></details></section>
 <section class="panel"><div class="eyebrow">Bench notes</div><h2 style="margin-top:10px">Same pairs. Different places.</h2><p class="small">A and B swap the orange and green pairs. Blue and brown stay in place.</p><details id="reference-details"><summary>Open pinout reference</summary><table class="reference"><thead><tr><th scope="col">Pin</th><th scope="col">T568A</th><th scope="col">T568B</th></tr></thead><tbody id="reference"></tbody></table></details><p class="small" style="margin-top:16px">This game checks color order only. A physical cable still needs correct termination and testing.</p></section></aside></main>
+<section class="panel story-panel" aria-labelledby="story-title"><div class="eyebrow">Learn the story. Remember the order.</div><h2 id="story-title">The T568 Wire Parade™ 🎉</h2><p class="small">Original mnemonic and study story by Ankita Srivastava · October 12, 2026</p><details id="parade-story"><summary>Read the full parade story and see both pinout diagrams</summary><article class="story-body"><p>Created by Ankita Srivastava</p>
+<p>Original T568A/T568B study story and mnemonic, October 12, 2026.</p>
+<h3>Before the parade</h3>
+<p>Before the parade even began, everyone knew two things:</p>
+<p>🍏 T568A (T-Apple) always liked Green.</p>
+<p>🍊 T568B (TB) always liked Orange.</p>
+<p>There were four original colors: Green, Orange, Blue, and Brown.</p>
+<p>Orange and Green were friendly rivals who were always competing to be chosen first.</p>
+<p>🍊 Orange vs. 🍏 Green</p>
+<p>Blue was the fair angel 👼 of the parade, always making sure everyone followed the rules and guarding the middle spots.</p>
+<p>Brown, the color of the ground, was grounded enough not to mind coming last. 🤎🌍</p>
+<p>Each color always carried its own white cushion wherever it went:</p>
+<ul><li>Green carried a White-Green cushion.</li><li>Orange carried a White-Orange cushion.</li><li>Blue carried a White-Blue cushion.</li><li>Brown carried a White-Brown cushion.</li></ul>
+<p>Green secretly wished TB would choose him, while Orange hoped T568A would choose her.</p>
+<p>But things didn&#x27;t go their way.</p>
+<p>T568A preferred Green, while T568B preferred Orange.</p>
+<p>Ever since then, whichever color wasn&#x27;t chosen first kept trying to sneak into the parade and claim a better spot.</p>
+<h3>T568A: T-Apple Chooses Green 🍏</h3>
+<p>When it was TA&#x27;s turn to organize the parade, Green and Orange both wanted to lead.</p>
+<p>But T-Apple chose Green.</p>
+<p>Green proudly laid down his white cushion and then took his place.</p>
+<p>White-Green, Green</p>
+<p>Orange wasn&#x27;t happy about being left behind, so she tried to sneak into the parade.</p>
+<p>Thinking nobody would notice, she quietly placed her cushion on the parade route.</p>
+<p>White-Orange</p>
+<p>For a moment, it looked like Orange might get away with it.</p>
+<p>But suddenly Blue the fair angel saw what was happening.</p>
+<p>“Stop! That&#x27;s not fair! You weren&#x27;t chosen to lead.”</p>
+<p>Blue rushed into the middle to stop the cheating so quickly that he forgot his own cushion.</p>
+<p>He jumped straight into position:</p>
+<p>Blue</p>
+<p>A moment later, his faithful White-Blue cushion came running after him:</p>
+<p>White-Blue</p>
+<p>With the rules restored, Blue nodded and said:</p>
+<p>“Now that&#x27;s fair. Orange, you may continue.”</p>
+<p>So Orange stepped into the place she had already saved.</p>
+<p>Orange</p>
+<p>Meanwhile, Brown watched quietly from the back.</p>
+<p>Being the color of the ground, Brown was grounded enough not to mind coming last.</p>
+<p>So Brown laid down his white cushion and took the final position.</p>
+<p>White-Brown, Brown</p>
+<h4>T568A Order</h4>
+<p>White-Green, Green, White-Orange, Blue, White-Blue, Orange, White-Brown, Brown</p><div class="parade-diagram" role="group" aria-label="T568A pin color coding diagram"><div><span class="small">Pin 1</span><span class="parade-wire" style="background:repeating-linear-gradient(135deg,#fff 0px,#fff 6px,#208250 6px,#208250 11px)" aria-hidden="true"></span><span>White-Green</span></div><div><span class="small">Pin 2</span><span class="parade-wire" style="background:#208250" aria-hidden="true"></span><span>Green</span></div><div><span class="small">Pin 3</span><span class="parade-wire" style="background:repeating-linear-gradient(135deg,#fff 0px,#fff 6px,#d96a19 6px,#d96a19 11px)" aria-hidden="true"></span><span>White-Orange</span></div><div><span class="small">Pin 4</span><span class="parade-wire" style="background:#287bc0" aria-hidden="true"></span><span>Blue</span></div><div><span class="small">Pin 5</span><span class="parade-wire" style="background:repeating-linear-gradient(135deg,#fff 0px,#fff 6px,#287bc0 6px,#287bc0 11px)" aria-hidden="true"></span><span>White-Blue</span></div><div><span class="small">Pin 6</span><span class="parade-wire" style="background:#d96a19" aria-hidden="true"></span><span>Orange</span></div><div><span class="small">Pin 7</span><span class="parade-wire" style="background:repeating-linear-gradient(135deg,#fff 0px,#fff 6px,#895635 6px,#895635 11px)" aria-hidden="true"></span><span>White-Brown</span></div><div><span class="small">Pin 8</span><span class="parade-wire" style="background:#895635" aria-hidden="true"></span><span>Brown</span></div></div>
+<h3>T568B: TB Chooses Orange 🍊</h3>
+<p>This time, TB was organizing the parade.</p>
+<p>TB chose Orange to lead.</p>
+<p>Orange proudly laid down her white cushion and took the first two spots.</p>
+<p>White-Orange, Orange</p>
+<p>Now Green felt disappointed.</p>
+<p>He thought he had found a shortcut. Quietly, he placed his cushion on the parade route before anyone noticed.</p>
+<p>White-Green</p>
+<p>For a moment, it looked like Green might sneak ahead.</p>
+<p>But Blue the fair angel caught him immediately.</p>
+<p>“Not so fast! The rules are the rules.”</p>
+<p>Blue charged into the middle to stop the confusion.</p>
+<p>In his rush to restore order, he forgot his own cushion and took his place first:</p>
+<p>Blue</p>
+<p>Seconds later, his faithful White-Blue cushion caught up with him:</p>
+<p>White-Blue</p>
+<p>With the parade back in order, Green was finally allowed to continue.</p>
+<p>Green</p>
+<p>And just like every other parade, Brown quietly put down his white cushion and took the last spot.</p>
+<p>After all, Brown was the color of the ground, making him grounded enough to come last.</p>
+<p>White-Brown, Brown</p>
+<h4>T568B Order</h4>
+<p>White-Orange, Orange, White-Green, Blue, White-Blue, Green, White-Brown, Brown</p><div class="parade-diagram" role="group" aria-label="T568B pin color coding diagram"><div><span class="small">Pin 1</span><span class="parade-wire" style="background:repeating-linear-gradient(135deg,#fff 0px,#fff 6px,#d96a19 6px,#d96a19 11px)" aria-hidden="true"></span><span>White-Orange</span></div><div><span class="small">Pin 2</span><span class="parade-wire" style="background:#d96a19" aria-hidden="true"></span><span>Orange</span></div><div><span class="small">Pin 3</span><span class="parade-wire" style="background:repeating-linear-gradient(135deg,#fff 0px,#fff 6px,#208250 6px,#208250 11px)" aria-hidden="true"></span><span>White-Green</span></div><div><span class="small">Pin 4</span><span class="parade-wire" style="background:#287bc0" aria-hidden="true"></span><span>Blue</span></div><div><span class="small">Pin 5</span><span class="parade-wire" style="background:repeating-linear-gradient(135deg,#fff 0px,#fff 6px,#287bc0 6px,#287bc0 11px)" aria-hidden="true"></span><span>White-Blue</span></div><div><span class="small">Pin 6</span><span class="parade-wire" style="background:#208250" aria-hidden="true"></span><span>Green</span></div><div><span class="small">Pin 7</span><span class="parade-wire" style="background:repeating-linear-gradient(135deg,#fff 0px,#fff 6px,#895635 6px,#895635 11px)" aria-hidden="true"></span><span>White-Brown</span></div><div><span class="small">Pin 8</span><span class="parade-wire" style="background:#895635" aria-hidden="true"></span><span>Brown</span></div></div>
+<h3>Super-Short Memory Trick</h3>
+<ul><li>A = Apple = Green goes first. 🍏</li><li>B = Orange goes first. 🍊</li><li>Every color brings its white cushion. 🤍</li><li>Blue is the fair angel who guards the middle spots and rushes in to restore order. 👼</li><li>Blue forgets his cushion during the rush, so Blue comes before White-Blue. 👼</li><li>Brown is the color of the ground, so he&#x27;s grounded enough to come last. 🌍</li><li>Orange and Green are rivals competing to be chosen first. 🍊🍏</li></ul>
+<h3>Attribution</h3>
+<p>The T568 Wire Parade™</p>
+<p>Original mnemonic and study story created by Ankita Srivastava on October 12, 2026.</p>
+<p>If you share, adapt, repost, or include this mnemonic in notes, videos, blogs, presentations, or training materials, please credit Ankita Srivastava as the original creator.</p></article></details></section>
 <footer><span>An AI-assisted study project by Ankita Srivastava. Unofficial CompTIA A+ practice.</span><span><a href="https://github.com/SAnkitaTech">GitHub</a> · <a href="https://github.com/erivera3/ethernet-wiring-game">Inspiration</a></span></footer>
 </div>
 <script>
